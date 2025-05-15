@@ -1,0 +1,11 @@
+CREATE TABLE `student_info` (
+	`name` VARCHAR(20) NOT NULL,
+	`id` INT NOT NULL,
+	`admission_year` INT NOT NULL,
+	`major` VARCHAR(30) NOT NULL,
+	`phone_number` VARCHAR(13) NOT NULL,
+	`address` VARCHAR(50) NOT NULL,
+	`total_credit` INT DEFAULT 0,
+	`average_grade` FLOAT DEFAULT 0.0,
+	`is_registered` BOOLEAN DEFAULT TRUE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
